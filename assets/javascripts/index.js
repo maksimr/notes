@@ -37,7 +37,7 @@
          * load unobtrusive scripting
          * adapter and bootstrap plugins.
          */
-        require(['rails', 'bootstrap/bootstrap-collapse', 'bootstrap/popover', 'bootstrap/scrollspy', 'bootstrap/tooltip']);
+        require(['rails', 'bootstrap/collapse', 'bootstrap/popover', 'bootstrap/scrollspy', 'bootstrap/tooltip']);
     });
 
 }(this));
