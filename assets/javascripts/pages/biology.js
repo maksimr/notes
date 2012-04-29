@@ -3,7 +3,7 @@
  */
 
 (function($) {
-    require(['text!/pages/biology.html'], function(template) {
+    require(['text!/notes/pages/biology.html'], function(template) {
         $('#js-content').append(template);
     });
 }(this.jQuery));
