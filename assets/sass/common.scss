@@ -1,0 +1,22 @@
+/*
+ * @desc Set up compass reset.
+ */
+@import "compass/reset";
+
+/*
+ * @desc Load twitter bootstartp.
+ */
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+/*
+ * @desc Custom style.
+ */
+
+body {
+  background-color: #EFEFE4;
+  padding-top: 90px;
+  @media (max-width: 979px) {
+    padding-top: 0;
+  }
+}
