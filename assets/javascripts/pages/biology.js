@@ -4,6 +4,6 @@
 
 (function($) {
     require(['text!/notes/pages/biology.html'], function(template) {
-        $('#js-content').append(template);
+        $('#js-content').html(template);
     });
 }(this.jQuery));
