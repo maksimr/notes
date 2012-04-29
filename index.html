@@ -14,13 +14,24 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <div class="brand">We will talk ...</div>
-          <ul id="js-mainnav" class="nav">
-            <li class="divider-vertical"></li>
-            <li>
-            <a href="assets/javascripts/pages/biology.js" data-remote="true" data-method="get" data-type="script">About Biology</a>
-            </li>
-          </ul>
+
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <div class="brand">Разговор ...</div>
+
+          <div class="nav-collapse">
+            <ul id="js-mainnav" class="nav">
+              <li class="divider-vertical"></li>
+              <li>
+              <a href="assets/javascripts/pages/biology.js" data-remote="true" data-method="get" data-type="script">О биологии</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
@@ -30,9 +41,30 @@
     <!--body section-->
     <div class="container-fluid">
       <div id="js-content" class="container">
+        <div class="page-header">
+          <h1>Введение</h1>
+        </div>
+        <p>
+        На этой странице моя переписка с отцом(пока что односторонняя), которая идет через интернет по
+        почте. Так как она затрагивает довольно интересные темы(в данный момент биологию), я подумал
+        что возможно это будет интересно не только мне, поэтому и выложил ее в открытом доступе.
+        </p>
+
+        <p>
+        Спасибо моему отцу, который заставляет меня, мою сестру и моих братьев изучать и задумываться
+        над чем то новым и несомненно полезным!
+        </p>
       </div>
+
+      <!--footer section-->
+      <footer class="footer container">
+      <a href="mailto:rv.maksim@gmail.com">rv.maksim@gmail.com</a>
+      </footer>
+      <!--end footer section-->
+
     </div>
     <!--end body section-->
+
 
   </body>
 </html>

@@ -15,7 +15,7 @@
         }
     });
 
-    require(['jquery'], function($) {
+    require(['jquery', 'text!/notes/pages/index.html'], function($, template) {
         var $mainnav = $('#js-mainnav'),
             $navlinks = $mainnav.find('li');
 
@@ -29,10 +29,15 @@
         });
 
         /**
-         * load unobtrusive scripting
-         * adapter.
+         * set index content.
          */
-        require(['rails']);
+        $('#js-content').html(template);
+
+        /**
+         * load unobtrusive scripting
+         * adapter and bootstrap plugins.
+         */
+        require(['rails', 'bootstrap/bootstrap-collapse', 'bootstrap/popover', 'bootstrap/scrollspy', 'bootstrap/tooltip']);
     });
 
 }(this));
