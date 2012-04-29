@@ -67,6 +67,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /*
+ * @desc dependency.
+ */
+/*
  * @desc Load twitter bootstartp.
  */
 /* line 10, ../sass/bootstrap.scss */
@@ -6478,14 +6481,31 @@ a.thumbnail:hover {
 /*
  * @desc Custom style.
  */
-/* line 16, ../sass/common.scss */
+/* line 22, ../sass/common.scss */
 body {
   background-color: #EFEFE4;
   padding-top: 90px;
 }
 @media (max-width: 979px) {
-  /* line 16, ../sass/common.scss */
+  /* line 22, ../sass/common.scss */
   body {
     padding-top: 0;
   }
+}
+
+/* line 30, ../sass/common.scss */
+.navbar-fixed-top .brand {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  text-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(255, 255, 255, 0.125) 0 0 30px;
+  font-weight: bold;
+  color: #000;
 }

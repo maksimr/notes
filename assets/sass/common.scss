@@ -4,6 +4,12 @@
 @import "compass/reset";
 
 /*
+ * @desc dependency.
+ */
+@import "compass/css3/transition";
+@import "compass/css3/text-shadow";
+
+/*
  * @desc Load twitter bootstartp.
  */
 @import "bootstrap";
@@ -19,4 +25,13 @@ body {
   @media (max-width: 979px) {
     padding-top: 0;
   }
+}
+
+.navbar-fixed-top .brand {
+  @include transition-property(all);
+  @include transition-duration(0.2s);
+  @include text-shadow(rgba(255, 255, 255, 0.1) 0 1px 0, rgba( 255, 255, 255, 0.125) 0 0 30px);
+
+  font-weight: bold;
+  color: #000;
 }
