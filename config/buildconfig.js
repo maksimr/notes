@@ -4,10 +4,9 @@
  */
 
 ({
-    appDir: '../',
-    baseUrl: 'assets/javascripts',
+    baseUrl: '../assets/javascripts',
     // create build project direcotry
-    dir: '../../notes-build',
+    dir: '../build/javascripts',
     inlineText: true,
     findNestedDependencies: true,
     // disable minification
