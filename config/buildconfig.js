@@ -15,8 +15,10 @@
     modules: [{
         name: 'index'
     }, {
-        name: 'pages/biology'
+        name: 'pages/biology',
+        exclude: ['text']
     }, {
-        name: 'pages/index'
+        name: 'pages/index',
+        exclude: ['text']
     }]
 })
