@@ -5,18 +5,9 @@
 (function(global) {
     'use strict';
 
-    /**
-     * Configuration requirejs.
-     * Add CDN jQuery.
-     */
-    global.requirejs.config({
-        paths: {
-            jquery: 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min'
-        }
-    });
-
-    require(['jquery', 'text!/notes/pages/index.html'], function($, template) {
-        var $mainnav = $('#js-mainnav'),
+    require(['text!../../pages/index.html', 'jquery'], function(template) {
+        var $ = global.jQuery,
+            $mainnav = $('#js-mainnav'),
             $navlinks = $mainnav.find('li');
 
         /**
@@ -37,7 +28,13 @@
          * load unobtrusive scripting
          * adapter and bootstrap plugins.
          */
-        require(['rails', 'bootstrap/collapse', 'bootstrap/scrollspy', 'order!bootstrap/tooltip', 'order!bootstrap/popover']);
+        require(['rails', 'bootstrap/collapse', 'bootstrap/scrollspy']);
+
+        // order plugin does not work
+        // whith anonymous define modules
+        require(['bootstrap/tooltip'], function() {
+            require(['bootstrap/popover']);
+        });
     });
 
 }(this));

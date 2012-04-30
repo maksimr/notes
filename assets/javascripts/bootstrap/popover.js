@@ -1,3 +1,4 @@
+define(["require", "exports", "module"], function(require, exports, module) {
 /* ===========================================================
  * bootstrap-popover.js v2.0.3
  * http://twitter.github.com/bootstrap/javascript.html#popovers
@@ -96,3 +97,4 @@
   })
 
 }(window.jQuery);
+});

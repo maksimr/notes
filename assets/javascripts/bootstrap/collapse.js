@@ -1,3 +1,4 @@
+define(["require", "exports", "module"], function(require, exports, module) {
 /* =============================================================
  * bootstrap-collapse.js v2.0.3
  * http://twitter.github.com/bootstrap/javascript.html#collapse
@@ -155,3 +156,4 @@
   })
 
 }(window.jQuery);
+});
