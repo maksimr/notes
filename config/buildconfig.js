@@ -11,9 +11,7 @@
     inlineText: true,
     findNestedDependencies: true,
     // disable minification
-    optimize: 'none',
     optimizeCss: 'none',
-    wrap: true,
     modules: [{
         name: 'index'
     }, {
